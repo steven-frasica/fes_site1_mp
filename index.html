@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="FES logo" />
+        <img src="./assets/FES.svg" class="logo" alt="FES logo" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -16,77 +17,94 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn Frontend</h1>
-          <p>
-            Go from being an absolute beginner to pro with a simplified process
-          </p>
-          <button>Start now</button>
+        <div class="row">
+          <div>
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">
+              Go from being an absolute beginner to pro with a simplified
+              process
+            </p>
+            <button>Start now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="home page image" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="home page image" />
-        </figure>
       </header>
     </section>
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          </p>
+        <div class="row">
+        <div class="section_description">
+          <div class="section_description--wrapper">
+            <p class="section_description--para">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
+              mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
+              urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
+              egestas.
+            </p>
+            <p class="section_description--para">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
+              mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
+              urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
+              egestas.
+            </p>
+          </div>
+          <figure class="about_img--wrapper">
+            <img src="./assets/about.jpg" alt="someone typing on a laptop" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="someone typing on a laptop" />
-        </figure>
       </section>
+      </div>
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="discord logo" />
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-        </p>
+        <div class="row">
+        <div class="section_description">
+          <figure class="about_img--wrapper">
+            <img src="./assets/discord.png" alt="discord logo" />
+          </figure>
+          <div class="section_description--wrapper">
+            <p class="section_description--para">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
+              mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
+              urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
+              egestas.
+            </p>
+            <p class="section_description--para">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
+              mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
+              urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
+              egestas.
+            </p>
+          </div>
+        </div>
+        </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
           <span>Email</span>
-          <input type="text" placeholder="jane@example.com" />
+          <input type="email" placeholder="jane@example.com" />
           <span>Message</span>
           <textarea type="text" placeholder="Write message here"></textarea>
+          <button>Contact Us!</button>
         </form>
-        <button>Submit</button>
       </section>
     </main>
     <footer>
-        <img src="./assets/FES.svg" alt="FES logo">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
-        </div>
-        <p>Copyright Frontend Simplified</p>
+      <img class="footer_logo" src="./assets/FES.svg" alt="FES logo" />
+      <div class="footer_links">
+        <a class="footer_link" href="#about">About</a>
+        <a class="footer_link" href="#discord">Discord</a>
+        <a class="footer_link" href="#contact">Contact</a>
+        <a class="footer_link" href="">Courses</a>
+      </div>
+      <p>Copyright Frontend Simplified</p>
     </footer>
   </body>
 </html>
